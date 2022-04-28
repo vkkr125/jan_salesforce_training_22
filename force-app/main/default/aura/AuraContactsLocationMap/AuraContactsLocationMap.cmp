@@ -1,0 +1,3 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <c:demo20ContactsLocationMap listView="visible"/>
+</aura:component>	

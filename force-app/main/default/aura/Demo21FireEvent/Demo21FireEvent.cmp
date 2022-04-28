@@ -1,0 +1,8 @@
+<aura:component>
+    <aura:registerEvent name="bubbleevent" type="c:cmpevent" />
+    <aura:registerEvent name="captureevent" type="c:cmpevent" />
+    <lightning:button variant="brand" label="Fire Event"  title="Brand action" onclick="{! c.fireEvent}"/>
+</aura:component>	
+
+
+<!-- propogation(bubble, capture) happen in only component event-->

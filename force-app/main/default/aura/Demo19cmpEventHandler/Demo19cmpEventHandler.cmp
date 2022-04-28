@@ -1,0 +1,14 @@
+<aura:component>
+
+    <aura:attribute name="messageFromEvent" type="String" />
+    <aura:attribute name="show_warning_message" type="Boolean" />
+    <aura:attribute name="count" type="Integer" default="0" />
+
+    <!-- <aura:handler name="cmpEventName" event="c:cmpevent" action="{!c.handleEvent}" />-->
+       Message Passed From Child Component is : {!v.messageFromEvent} 
+      <br/> <br/> <br/><br/><br/> 
+    <aura:if isTrue="{!v.show_warning_message}" >
+        Smothing is changed  <p>Total Count is : {!v.count}</p>
+    </aura:if>
+    <c:Demo19CmpEvenFire />
+</aura:component>	

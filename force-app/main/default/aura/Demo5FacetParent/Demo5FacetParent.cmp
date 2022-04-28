@@ -1,0 +1,8 @@
+<aura:component extensible="true">
+    <aura:attribute name="parenttest" type="String" default="test me" />
+    <br/> <br/> ================================ <br/>
+       This is Parent Component
+    <br/> ================================ <br/>
+    {!v.body}
+    
+</aura:component>

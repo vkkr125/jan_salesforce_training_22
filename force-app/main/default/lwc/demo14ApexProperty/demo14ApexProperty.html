@@ -1,0 +1,54 @@
+<template>
+    <lightning-card title="Apex Property Demo" icon-name="standard:contact">
+        <div class="slds-m-left_medium">
+            <!-- <template for:each={contacts.data} for:item="contact">
+                <p key={contact.Id}>
+                    {contact.Name} :: {contact.Title} :: {contact.Email} :: {contact.Phone}
+                </p>
+            </template> -->
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered"
+                aria-labelledby="element-with-table-label other-element-with-table-label">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Contact Name">Contact Name</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Contact Title">Contact Title</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Phone">Contact Phone</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Email">Contact Email</div>
+                        </th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                   <template for:each={contacts.data} for:item="contact">
+                    <tr key = {contact.Id} class="slds-hint-parent">
+                        <th data-label="Opportunity Name" scope="row">
+                            <div class="slds-truncate" title="Cloudhub">
+                                <a href={contact.Id} tabindex="-1">{contact.Name}</a>
+                            </div>
+                        </th>
+                        <td data-label="Account Name">
+                            <div class="slds-truncate" title="Contact Title">{contact.Title}</div>
+                        </td>
+                        <td data-label="Close Date">
+                            <div class="slds-truncate" title="4/14/2015">{contact.Phone}</div>
+                        </td>
+                        <td data-label="Contact">
+                            <div class="slds-truncate" title="Contact Email">
+                                <a href="#" tabindex="-1">{contact.Email}</a>
+                            </div>
+                        </td>
+                    </tr>
+                   </template>
+                   
+                </tbody>
+            </table>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Calculator Demo" icon-name="">
+        <div class="slds-m-left_medium">
+            <p> First Number : {firstNo}
+                <br/>
+                <lightning-input label="Enter First Number" name="fno" onchange={handleChange}></lightning-input>
+            </p>
+            <p> Second Number : {secondNo}
+                <br/>
+                <lightning-input label="Enter First Number" name="sno" onchange={handleChange}></lightning-input>
+            </p>
+            <p>  Result: {result}</p>
+            <p> 
+                <lightning-button label="ADD" onclick={add} variant="brand"></lightning-button>
+                <lightning-button label="SUBTRACT" onclick={sub} variant="brand"> </lightning-button>
+             </p>
+              
+        </div>
+    </lightning-card>
+</template>
+
+<!-- 
+
+    Namespace : lightning
+    class Card{
+        title;
+        iconName;
+        while refering these properties in HTML
+    }
+ -->

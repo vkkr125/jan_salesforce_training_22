@@ -1,0 +1,11 @@
+<aura:component>
+<div> <!-- do not remove this element-->
+    <div class="white">Hello MTX</div>
+    <h2 class="mytitle">Welcome to MTX Trainings</h2>
+    <ol>
+        <li class="red">THis is red color</li>
+        <li class="green"> THis is blue color</li>
+        <li class="blue">THis is <span class="yellow">This is span</span> green color</li>
+    </ol>
+</div>
+</aura:component>

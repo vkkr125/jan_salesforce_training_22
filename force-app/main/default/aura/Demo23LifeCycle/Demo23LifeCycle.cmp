@@ -1,0 +1,13 @@
+<aura:component>
+    <aura:attribute name="mydata" type="Integer" default="0" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+    Data is: {!v.mydata}
+
+    <lightning:button label="update data" title="Neutral action" onclick="{! c.handleClick }"/>
+    
+    <c:Demo23UnrendererComponent aura:id="mycmp" />
+    <lightning:button variant="brand" label="Destroy component" onclick="{! c.destroyCmp }" />
+
+
+</aura:component>	

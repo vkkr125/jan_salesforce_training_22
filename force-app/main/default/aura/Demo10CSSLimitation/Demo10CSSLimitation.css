@@ -1,0 +1,15 @@
+.THIS p{
+    border : 1px solid black;
+    padding: 11 px;
+}
+
+.THIS .cDemo10CSSLimitationCmp1{
+    color : red;
+}
+.THIS .cDemo10CSSLimitationCmp2{
+    color : green;
+}
+
+.THIS .myclass{
+    background-color : blue;
+}

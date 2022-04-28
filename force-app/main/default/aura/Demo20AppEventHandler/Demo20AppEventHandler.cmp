@@ -1,0 +1,7 @@
+<aura:component implements="force:appHostable, flexipage:availableForAllPageTypes,force:lightningQuickAction ">
+    <aura:attribute name="messageFromEvent" type="String" />
+    <aura:handler event="c:appevent" action="{!c.handleEvent}"/>
+    <br/><br/><br/><br/>
+    Message Passed from other component is : {!v.messageFromEvent}
+    <br/><br/><br/><br/>
+</aura:component>	

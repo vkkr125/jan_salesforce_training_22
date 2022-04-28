@@ -1,0 +1,15 @@
+<template>
+   <lightning-card title="For Each Demo" icon-name="custom:custom4">
+       <div class="slds-m-left_medium">
+           <!-- <template for:each={products} for:item="product" for:index="pindex">
+               <p key={pid}>{pindex} === {product}</p>
+           </template> -->
+
+           <template for:each={products} for:item="product">
+               <p key={product.pno}>
+                   {product.pno} :: {product.pname} :: {product.price}
+               </p>
+           </template>
+       </div>
+   </lightning-card>
+</template>

@@ -1,0 +1,44 @@
+<template>
+    <lightning-card title="Apex Imperative Call Demo" icon-name="standard:contact">
+        <div class="slds-m-left_medium">
+            <p> <lightning-button label="Get Contacts" onclick={handleGetContacts}></lightning-button></p>
+        </div>
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered"
+        aria-labelledby="element-with-table-label other-element-with-table-label" if:true={contacts}>
+        <thead>
+            <tr class="slds-line-height_reset">
+                <template for:each={features} for:item="contact_details">
+                    <th key={Id} class="" scope="col">
+                        <div class={contact_details.class} title={contact_details.value}>{contact_details.value}</div>
+                    </th>
+                </template>
+            </tr>
+        </thead>
+        <tbody>
+           <template for:each={contacts} for:item="contact">
+            <tr key = {contact.Id} class="slds-hint-parent">
+                <th data-label="Contact Name" scope="row">
+                    <div class="slds-truncate" title="Cloudhub">
+                        <a href={contact.cid} tabindex="-1">{contact.Name}</a>
+                    </div>
+                </th>
+                <td data-label="Contact Title">
+                    <div class="slds-truncate" title="Contact Title">{contact.Title}</div>
+                </td>
+                <td data-label="Contact Phone">
+                    <div class="slds-truncate" title="4/14/2015">{contact.Phone}</div>
+                </td>
+                <td data-label="Contact Email">
+                    <div class="slds-truncate" title="Contact Email">
+                        <a href="#" tabindex="-1">{contact.Email}</a>
+                    </div>
+                </td>
+            </tr>
+           </template>
+        </tbody>
+    </table>
+    <p if:true={erro}>
+        {error}
+    </p>
+    </lightning-card>
+</template>

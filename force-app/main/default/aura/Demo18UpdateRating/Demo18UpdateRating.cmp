@@ -1,0 +1,27 @@
+<aura:component implements= "flexipage:availableForAllPageTypes, force:lightningQuickAction,force:hasRecordId,force:hasSObjectName" controller="Demo18AccountUpdateController">
+
+    <aura:attribute name="sObjectName" type="String" />
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="accountRec" type="Account" />
+    <!-- <p>{!v.sObjectName} ==== {!v.recordId}</p> -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <lightning:card footer="Card Footer" title="Update Account Rating">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+              <span><lightning:input type="String" disabled="true" name="input1" label="record Id" value="{!v.accountRec.Id}" /></span>
+            </div>
+            <div class="slds-col">
+                <span><lightning:input type="String"  name="input1" label="Enter Name" value="{!v.accountRec.Name}" /></span>
+            </div>
+            <div class="slds-col">
+                <span><lightning:input type="String" name="input1" label="Account Rating" value="{!v.accountRec.Rating}" /></span>
+            </div>
+          </div>
+          <lightning:button variant="brand" label="Save" title="Brand action" onclick="{! c.handleClick }" />
+
+    </lightning:card>
+
+
+
+</aura:component>	

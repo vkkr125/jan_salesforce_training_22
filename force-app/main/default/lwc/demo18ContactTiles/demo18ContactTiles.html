@@ -1,0 +1,7 @@
+<template>
+    <template for:each={contacts} for:item="contact">
+        <p key={contact.Id}> 
+            <c-demo18-contact-tile contact={contact} ontileevent={handleTileEvent}></c-demo18-contact-tile>
+        </p>
+    </template>
+</template>

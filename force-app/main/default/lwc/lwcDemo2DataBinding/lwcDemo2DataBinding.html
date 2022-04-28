@@ -1,0 +1,36 @@
+<template>
+
+    <lightning-card  title="Hello">
+        <p class="slds-p-horizontal_small">Hello {greeting}</p>
+        <div class="slds-p-around_medium lgc-bg">
+        <lightning-input 
+            type="text" 
+            label="Enter Greeting Value" 
+            value={greeting}
+            onchange ={handleGreetingChange} >
+        </lightning-input>
+
+        <lightning-input 
+            type="text" 
+            name="firstname"
+            label="First Name" 
+            onchange ={handleNameChange} >
+        </lightning-input>
+
+        <lightning-input 
+            type="text" 
+            name="lastname"
+            label="First Name" 
+            onchange ={handleNameChange} >
+        </lightning-input>
+        <br/><br/><br/><br/>
+        Full Name is : {fullName.fname} - {fullName.lname}
+        <lightning-button label="submit" title="submit" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+
+
+        
+        </div>
+        
+    </lightning-card>
+</template>

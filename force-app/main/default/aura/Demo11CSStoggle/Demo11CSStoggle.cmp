@@ -1,0 +1,5 @@
+<aura:component>
+   <aura:attribute name="label" type="String" default="Hello MTX"/>
+   <div aura:id="mytext">{!v.label}</div>
+   <lightning:button label="Hide" title="Neutral action" onclick="{! c.handleClick }" aura:id="mybutton"/>
+</aura:component>  

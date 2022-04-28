@@ -1,0 +1,7 @@
+<aura:component extends="c:Demo5FacetParent">
+    <br/>
+    <p>This is child component</p>
+    <p>{!v.body}</p>
+    <br/> <br/>
+    <p>This is the child facet text : {!v.parenttest}</p>
+</aura:component>

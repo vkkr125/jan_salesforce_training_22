@@ -1,0 +1,4 @@
+<aura:component>
+    <aura:handler name="bubbleevent" event="c:cmpevent" action="{!c.handleBubble}"/>
+    <c:Demo21GrandChild />
+</aura:component>	

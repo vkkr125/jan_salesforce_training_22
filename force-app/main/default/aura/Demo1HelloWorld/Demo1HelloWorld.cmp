@@ -1,0 +1,5 @@
+<aura:component>
+    <h2>This is First Aura component</h2>
+    <p>Hello World</p>
+    <p>Welcome to MTX trainings</p>
+</aura:component>

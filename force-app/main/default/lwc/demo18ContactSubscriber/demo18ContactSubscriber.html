@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Contact Subscriber : Contact Details" icon-name="standard:contact">
+        <p>hello</p>
+        <!-- buttone will display in the action slot by specifying slot as actions -->
+        <lightning-button label="Edit" icon-name="action:edit" slot="actions" onclick={handleEditClick}></lightning-button>
+        <lightning-button label="Delete" icon-name="action:delete" slot="actions" onclick={handleDeleteClick}></lightning-button>
+        <div class="slds-m-left_medium" if:true={contact.data}>
+            <p>Name : {name}</p>
+            <p>Title : {title}</p>
+            <p>Phone : {phone}</p>
+            <p>Email : {email}</p>
+            <p>
+                <c-demo19-contact-location-map record-id={selectedContactId}></c-demo19-contact-location-map>
+            </p>
+        </div>
+    </lightning-card>
+</template>

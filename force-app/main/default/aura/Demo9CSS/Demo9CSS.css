@@ -1,0 +1,29 @@
+.THIS{
+    background-color: gray;
+}
+
+/* this will not be applied because there is no space*/
+.THIS.mytitle{
+    background-color: black;
+    font-size: 40px;
+    color: white;
+}
+.THIS .white{
+    background-color: white;
+}
+.THIS .red{
+    background-color:red;
+}
+.THIS .green{
+    background-color: green;
+}
+.THIS .blue{
+    background-color: blue;
+}
+.THIS .yellow{
+    background-color: yellow;
+}
+
+/*applying css to outermost elment do not provide space from THIS */
+/* applying css to child attributes keep space from THIS */
+/* THIS css class automatically got added to all outermost components*/

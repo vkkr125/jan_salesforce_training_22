@@ -1,0 +1,16 @@
+<aura:component>
+    
+    <ltng:require
+    styles="{!$Resource.js_and_css_resources  + '/appresource/css/mycss.css'}"
+    scripts="{!$Resource.js_and_css_resources + '/appresource/js/Chart.js'}"
+    afterScriptsLoaded="{!c.scriptsLoaded}" />
+
+    <canvas aura:id="myChart" height="400" width="400"></canvas>
+    <img src="{!$Resource.js_and_css_resources  + '/appresource/images/Long_Fence.png'}"/>
+    <br/> <br/><br/><br/>
+    <div class="green"> This is the css style div</div>
+    <div class="yellow">This is the css style div</div>
+    <div class="red">This is the css style div</div>
+
+
+</aura:component>	

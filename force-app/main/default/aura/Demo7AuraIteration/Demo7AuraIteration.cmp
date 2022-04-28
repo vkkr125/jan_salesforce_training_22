@@ -1,0 +1,21 @@
+<aura:component>
+    <aura:attribute name="colorSet" type="Set" default="['green','green','red','black']" />
+    <aura:iteration items="1,2,3,4,5" var="item">
+        <meter value="{!item / 5}" /> <br/>
+    </aura:iteration>
+    <br/><br/><br/> Color Set iteration <br/><br/><br/>
+    <ul>
+        <aura:iteration items="{!v.colorSet}" var="color" indexVar="count" >
+            <li> Color at Index {!count} is : {!color} </li>
+        </aura:iteration>
+    </ul>
+
+    <br/><br/><br/> Table <br/><br/><br/>
+    <table border="0">
+        <tr><th>Color Names</th></tr>
+        <aura:iteration items="{!v.colorSet}" var="color">
+            <tr><td>{!color}</td></tr>
+        </aura:iteration>
+    </table>
+
+</aura:component>

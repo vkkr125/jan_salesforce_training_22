@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable, flexipage:availableForAllPageTypes,force:lightningQuickAction ">
+    <aura:attribute name="messageString" type="String" />
+    <aura:registerEvent name="appEventName" type="c:appevent"/>
+
+    <p>========================================= Application Event Demo : Child component /Event Fire Component Start =========================</p>
+    <lightning:input type="String" name="Enter the Message to be passed " value= "{!v.messageString}"  />
+    <lightning:button variant="brand" label="Fire Event/Send Message to Parent" title="Brand action" onclick="{! c.fireEvent}"/>
+    <br/>
+    <p> =========================== Application Event Demo : Child Component / Event Fire Component End ==========================</p>
+</aura:component>	

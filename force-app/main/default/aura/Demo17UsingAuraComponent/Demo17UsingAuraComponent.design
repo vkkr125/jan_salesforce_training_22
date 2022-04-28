@@ -1,0 +1,4 @@
+<design:component >
+    <design:attribute name="textColor" label="Text Color" datasource="black, green, red, blue,yellow,magenta" />
+    <design:attribute name="dateFormat" datasource="apex://MyCustomPickList"/>
+</design:component>

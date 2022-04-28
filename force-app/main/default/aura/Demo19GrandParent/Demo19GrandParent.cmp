@@ -1,0 +1,10 @@
+<aura:component>
+    <aura:attribute name="messageFromEvent" type="String" />
+    <aura:attribute name="show_warning_message" type="Boolean" />
+    <aura:handler name="cmpEventName" event="c:cmpevent" action="{!c.handleEvent}" />
+
+    <br/>  <br/>  <br/>  <br/>
+         This is a grand parent component : {!v.messageFromEvent}
+    <br/>  <br/>  <br/>  <br/>
+    <c:Demo19cmpEventHandler />
+</aura:component>	

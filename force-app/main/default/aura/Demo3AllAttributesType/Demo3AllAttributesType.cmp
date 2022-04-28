@@ -1,0 +1,64 @@
+<aura:component>
+    <aura:attribute name="mystring" type="String" default="My String value" />
+    <aura:attribute name="jsObject" type="Object" default="" />
+    <aura:attribute name="myAccount" type="Account" default="{'sobjectType' : 'Account','Name' : 'Test Account', 'Active__c' : 'Yes'}" />
+    <aura:attribute name="myCollege" type="College__c" default="{'sobjectType' : 'College__c', 'Name' : 'Test College', 'is_Active__c' : true}" />
+    <aura:attribute name="stringArray" type="String[]" default="['value1', 'value2','value3','value4']" />
+    <aura:attribute name="colorList" type="List" default="['red','green','blue','red']" />
+    <aura:attribute name="colorSet" type="Set" default="['green','green','red','black']" />
+    <aura:attribute name="colorMap" type="Map" default="{key1 : 'green', key2 : 'black'}" />
+    <aura:attribute name="myCustomeType" type="MyDemoWrapper" />
+
+    <aura:handler name="init" value="{!this}" action="c.doInit" />
+    <div>
+        <table>
+            <thead>
+                <th>Type</th>
+                <th>Attribute Name</th>
+                <th>Attribute Value</th>
+            </thead>
+            <tr>
+                <td>Basic String</td>
+                <td>mystring</td>
+                <td>{!v.mystring}</td>
+            </tr>
+            <tr>
+                <td>Custome Data Type</td>
+                <td>myCustomeType</td>
+                <td>{!v.myCustomeType.myname} --- {!v.myCustomeType.email}</td>
+            </tr>
+            <tr>
+                <td>Javascript Object</td>
+                <td>jsObject</td>
+                <td>{!v.jsObject.name} --- {!v.jsObject.email}</td>
+            </tr>
+            <tr>
+                <td>Standard Object</td>
+                <td>myAccount</td>
+                <td>{!v.myAccount.Name} --- {!v.myAccount.Active__c}</td>
+            </tr>
+            <tr>
+                <td>string array</td>
+                <td>stringArray</td>
+                <td>{!v.stringArray[0]}</td>
+            </tr>
+            <tr>
+                <td>List</td>
+                <td>colorList</td>
+                <td>{!v.colorList[1]} --- {!v.colorList[2]}</td>
+            </tr>
+            <tr>
+                <td>Set</td>
+                <td>colorSet</td>
+                <td>{!v.colorSet.length}</td>
+            </tr>
+            <tr>
+                <td>Map</td>
+                <td>colorMap</td>
+                <td>{!v.colorMap.key1} --- {!v.colorMap.key2}</td>
+            </tr>
+
+        </table>
+    </div>
+
+</aura:component>
