@@ -73,12 +73,7 @@ public class ApexFindTopper{
                                   if(!collegeIdToCollegeName.containsKey(marks.Student__r.College__c)){
                                      collegeIdToCollegeName.put(marks.Student__r.College__c, marks.Student__r.College__r.Name);
                                   }
-                                 
-                         
                               }
-        
-        
-        
         Map<Id,String> collegeIdToTopperStudentMap = new Map<Id,String>();
         for(String key : collegeAndStudentIdToMarksMap.keySet()){
             Id collegeId = key.split('\\*').get(0);

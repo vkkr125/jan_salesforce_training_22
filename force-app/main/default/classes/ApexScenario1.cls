@@ -1,7 +1,6 @@
 public class ApexScenario1 {
    
     public void SolutionUsingSet(){
-   
     /*    List<Account> accountUpdateList = new List<Account>();
         for(Contact con : [SELECT Id,Name,AccountId
                            FROM Contact
@@ -21,7 +20,7 @@ public class ApexScenario1 {
         */
         
        // the above code will give error coz list contains duplicate accounts(based on id)
-       // and DML operation can not be perforemed on duplicates id's
+       // and DML operation can not be perforemed on duplicates id's 
         List<Account> accountUpdateList = new List<Account>();
         Set<Id> accountIdSet = new Set<Id>();
         
@@ -42,7 +41,6 @@ public class ApexScenario1 {
                            }
 
         if(accountUpdateList.size() > 0){
-            
             // NOTE : CRUD operations are only performed on LIST 
             update accountUpdateList;
         }
@@ -57,12 +55,11 @@ public class ApexScenario1 {
                            WHERE Name like 'Contact Demo%'
                            AND AccountId != NULL]){
                                 if(!recordIdToRecordMap.containsKey(con.AccountId)){
-                                   
+                                    Account acc = new Account();
+                                    acc.Id = con.AccountId;
+                                    acc.Active__c = 'Yes';
+                                    recordIdToRecordMap.put(acc.Id,acc);
                                }
-                                Account acc = new Account();
-                                acc.Id = con.AccountId;
-                                acc.Active__c = 'Yes';
-                                recordIdToRecordMap.put(acc.Id,acc);
                             }
          
         if(recordIdToRecordMap.size() > 0){

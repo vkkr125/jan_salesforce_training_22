@@ -9,6 +9,7 @@
         targetFields="{!v.simpleAccount}"
         targetError="{!v.accountError}"/>
     <div>
+        
         <lightning:card iconName="standard:account" title="{!v.simpleAccount.Name}" >
             <div class="slds-p-horizontal--small">
                 <p class="slds-text-heading--medium"><lightning:formattedPhone title="Phone" value="{!v.simpleAccount.Phone}" /></p>
