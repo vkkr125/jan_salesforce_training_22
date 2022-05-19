@@ -1,5 +1,4 @@
 public class AccountTriggerHandler {
-    
     public static void copyBillingToShipping(List<Account> newList,Map<Id,Account> oldMap){
         Boolean isBillingChanged, isShippingChanged;
         for(Account acc : newList){
@@ -37,7 +36,7 @@ public class AccountTriggerHandler {
             }
         }
     }
-    
+
     // both update, insert handling at the same time
     public static void populateFavouriteColorUpdateInsert(List<Account> newList,Map<Id,Account> oldMap){
         Set<Id> ownerIdSet = new Set<Id>();

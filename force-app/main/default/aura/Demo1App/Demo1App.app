@@ -59,7 +59,8 @@
 
     <!-- <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     <aura:handler name="render" value="{!this}" action="{!c.onRender}"/> -->
-    <c:Demo23LifeCycle/>
+    <!-- <c:Demo23LifeCycle/> -->
+    <c:Demo21Child />
 
 
 

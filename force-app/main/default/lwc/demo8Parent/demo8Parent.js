@@ -11,9 +11,8 @@ export default class Demo8Parent extends LightningElement {
       //  alert('INSIDE Parent CONSTRUCTOR');
         this.parentProp = 234;
        // alert('INSIDE Parent CONSTRUCTOR : Value of parentProp : ' + this.parentProp);
-
+       
     }
-    
     connectedCallback(){
        // alert('INSIDE Parent CONSTRUCTOR');
 

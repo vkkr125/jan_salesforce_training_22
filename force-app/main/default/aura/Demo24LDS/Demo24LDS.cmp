@@ -1,5 +1,5 @@
 <aura:component implements= "flexipage:availableForAllPageTypes,force:hasRecordId,force:hasSObjectName" >
-     <aura:attribute name="sObjectName" type="String" />
+    <aura:attribute name="sObjectName" type="String" />
     <aura:attribute name="recordId" type="String" />
     <!-- {!v.sObjectName} ===== {!v.recordId}  
    <lightning:recordViewForm recordId="{!v.recordId}" objectApiName="{!v.sObjectName}">

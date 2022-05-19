@@ -8,6 +8,5 @@
             showWarningMessage : true
         });
         cmpeve.fire();
-        
     }
 })

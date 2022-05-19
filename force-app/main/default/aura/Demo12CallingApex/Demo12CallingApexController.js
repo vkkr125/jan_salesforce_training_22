@@ -1,6 +1,6 @@
 ({
     handleClick : function(component, event, helper) {
-        component.set('v.showSpinner',true);
+        // component.set('v.showSpinner',true);
         var action = component.get("c.getAccounts");
         action.setCallback(this, function(response) {
             var state = response.getState();

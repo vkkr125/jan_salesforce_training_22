@@ -7,6 +7,5 @@
    </aura:method>
    <aura:method name="remove" action="{!c.auraRemoveMessage}">
    </aura:method>
-
    <div aura:id="messagediv"></div>
 </aura:component>  

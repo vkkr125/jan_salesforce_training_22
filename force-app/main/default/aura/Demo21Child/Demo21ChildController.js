@@ -4,5 +4,9 @@
         
       // this will stop the propogation of message from buttom to top (bubble phase)
       //  event.stopPropagation();
+    },
+    dosomthing: function(component, event, helper) {
+     
     }
+
 })

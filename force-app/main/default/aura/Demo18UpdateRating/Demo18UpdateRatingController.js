@@ -29,6 +29,4 @@
         
         $A.enqueueAction(action);
     }
-
-    
 })

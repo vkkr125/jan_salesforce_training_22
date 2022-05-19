@@ -97,9 +97,7 @@ public class ApexAssignment {
                                  collegeIdToCollegeNameMap.put(marks.Student__r.College__c,marks.Student__r.College__r.Name);
                                  studentIdToStudentNameMap.put(marks.Student__c,marks.Student__r.Name);
                               }
-        
-   
-        
+
        Map<Id,String> collegeIdToTopperStudentMap = new Map<Id,String>();
         for(String key : collegeIdAndStudentIdToMarks.keySet()){
             Id collegeId = key.split('\\*').get(1);
